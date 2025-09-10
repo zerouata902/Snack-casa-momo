@@ -45,9 +45,12 @@
 
 <header class="main-header">
   <!-- اليمين: اللوغو -->
-  <div class="right-section">
-    <img src="images/Logoo.jpg" alt="Logo" class="logo">
+<div class="right-section">
+  <div class="logo-box">
+    <img src="images/Logoo.jpg" alt="Logo 1" class="logo active">
+    <img src="images/Logoo2.png" alt="Logo 2" class="logo">
   </div>
+</div>
   <!-- الوسط: Dropdown اللغات -->
   <div class="center-section">
     <div class="dropdown">
@@ -2774,7 +2777,16 @@ document.addEventListener('click', () => {
   document.querySelectorAll('.description-box').forEach(box => box.classList.remove('show'));
 });
 </script>
+<script>
+  const logos = document.querySelectorAll('.logo-box img');
+  let current = 0;
 
+  setInterval(() => {
+    logos[current].classList.remove('active');
+    current = (current + 1) % logos.length;
+    logos[current].classList.add('active');
+  }, 2000);
+		</script>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
