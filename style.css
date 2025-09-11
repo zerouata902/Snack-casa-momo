@@ -2017,6 +2017,15 @@ h3{
 
 
 
+.close-cart {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
 .cart-page {
   display: none;
@@ -2029,6 +2038,11 @@ h3{
   padding: 20px;
   overflow-y: auto;
   z-index: 1000;
+}
+.cart-page h3{
+  color:white;
+  font-size:20px;
+  top:5px;
 }
 .cart-item {
   display: flex;
