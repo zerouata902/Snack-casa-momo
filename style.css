@@ -1993,7 +1993,24 @@ h3{
   display: flex;
   align-items: center;
   gap: 10px;
+  position: relative ;
 }
+
+
+#cart-count {
+  position: absolute;
+  top: -8px;
+  left: 16px;
+  background: red;
+  color: white;
+  font-size: 2px;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 2px 6px;
+  display: none; /* مخفي حتى يزاد شي منتوج */
+  z-index: 10;
+}
+
 
 .cart-left i {
   font-size: 1.3rem;
@@ -2026,6 +2043,7 @@ h3{
   cursor: pointer;
   transition: 0.3s;
 }
+
 
 .cart-page {
   display: none;
