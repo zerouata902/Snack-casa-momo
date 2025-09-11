@@ -2569,7 +2569,7 @@ body {
 /* الثمن */
 .item .price {
 position:relative;
-  left:20px;
+  left:30px;
   font-size: 12px;
   font-weight: bold;
   color: white;
@@ -2669,7 +2669,7 @@ position:relative;
 
 
 .item h3 {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: bold;
   margin: 20px 0;
   color: white;
@@ -3157,7 +3157,7 @@ color: white;
 /* 📱 الهاتف */
 @media (max-width: 480px) {
   .slider {
-    height: 36vh;   /* ارتفاع مناسب للتليفون */
+    height: 34vh;   /* ارتفاع مناسب للتليفون */
   }
 }
 
