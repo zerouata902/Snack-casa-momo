@@ -2012,6 +2012,18 @@ h3{
 }
 
 
+/* ✅ Animation ديال الاهتزاز */
+@keyframes shake {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-2px, 0); }
+  50% { transform: translate(2px, 0); }
+  75% { transform: translate(-2px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+#cart-count.shake {
+  animation: shake 0.3s;
+  }
 .cart-left i {
   font-size: 1.3rem;
   color:white;
