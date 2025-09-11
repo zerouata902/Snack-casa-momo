@@ -2003,9 +2003,9 @@ h3{
   left: 16px;
   background: red;
   color: white;
-  font-size: 7px;
+  font-size: 10px;
   font-weight: bold;
-  border-radius: 30px;
+  border-radius: 80%;
   padding: 2px 6px;
   display: none; /* مخفي حتى يزاد شي منتوج */
   z-index: 10;
