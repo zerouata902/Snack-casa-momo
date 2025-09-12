@@ -2029,18 +2029,6 @@ h3{
   color:white;
 }
 
-/* الزر عادي، صغيور وأنيق */
-.order-btn {
-  background:green;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  font-weight:bold;
-  border-radius: 12px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
 
 
 
@@ -2051,10 +2039,28 @@ h3{
   top: 10px;
   right: 15px;
   font-size: 22px;
-  color: white;
+  color: red;
   cursor: pointer;
   transition: 0.3s;
 }
+
+
+/* الزر عادي، صغيور وأنيق */
+.order-btn {
+  background:green;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-weight:bold;
+  border-radius: 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+
 
 
 .cart-page {
@@ -2069,16 +2075,42 @@ h3{
   overflow-y: auto;
   z-index: 1000;
 }
-.cart-page h3{
-  color:white;
-  font-size:20px;
-  top:5px;
+.cart-page h3 {
+    color:white;
+    font-size:20px;
+    top:5px;
+    animation: change 1s infinite alternate;
 }
+@keyframes change {
+    from {
+        color: white;
+    }
+    to {
+        color:black;
+    }
+}
+
+.cart-page p {
+    font-size: 12px;
+    top: 5px;
+    font-weight: bold;
+    animation: changeColor 1s infinite alternate;
+}
+
+@keyframes changeColor {
+    from {
+        color: white;
+    }
+    to {
+        color:#ffffffd9;
+    }
+}
+
 .cart-item {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
-  background: #222;
+  background: #111;
   padding: 10px;
   border-radius: 8px;
 }
@@ -2096,8 +2128,8 @@ h3{
   gap: 5px;
 }
 .cart-item button {
-  background: white;
-  color: black;
+  background: green;
+  color: white;
   border: none;
   padding: 5px 8px;
   border-radius: 5px;
@@ -2125,8 +2157,8 @@ h3{
 .order-button {
   display: block;
   width: 100%;
-  background:white;
-  color: black;
+  background:green;
+  color: white;
   border: none;
   padding: 14px 20px;
   border-radius: 10px;
@@ -2148,6 +2180,7 @@ h3{
     white 15%, 
     white 100%);
   transform: scale(0.80);
+  color: black;
 }
 
 
@@ -2208,7 +2241,11 @@ h3{
     red 100%);
   transform: scale(0.80);
   color: white;
-}
+  }
+
+
+
+
 
 .promo-badge {
   position: absolute;
