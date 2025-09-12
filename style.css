@@ -2094,7 +2094,7 @@ h3{
     font-size: 15px;
     top: 5px;
     font-weight: bold;
-    animation: changeColor 2s infinite alternate;
+    animation: changeColor 10s infinite alternate;
 }
 
 @keyframes changeColor {
