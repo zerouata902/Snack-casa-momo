@@ -2099,10 +2099,10 @@ h3{
 
 @keyframes changeColor {
     from {
-        color:white;
+        color:red;
     }
     to {
-        color:red;
+        color:white;
     }
 }
 
