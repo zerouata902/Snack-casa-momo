@@ -2137,11 +2137,20 @@ h3{
 .order-options, #map-container {
   display: none;
   background: black;
+  position:fixed;
+  top:0;
+  left:0;
   padding: 20px;
   position: fixed;
   bottom: 60px;
   width: 100%;
-}
+  height: 100vh;   
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  Box-sizing :border-box;
+    }
 .order-options button {
   width: 100%;
   margin-top: 10px;
@@ -2210,10 +2219,11 @@ h3{
   width: 100%;
   height: 150px;
 }
+}
+
 #send-order-button {
-  display: none;
-  background:white;
-  color:black;
+  background: #25D366;
+  color: white;
   font-weight: bold;
   padding: 14px 26px;
   border: none;
@@ -2221,27 +2231,71 @@ h3{
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-top: 20px;
-  width: 90%;
-  max-width: 400px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto 0;
+  animation: shake 0.5s infinite;
+  animation-delay: 2s; /* يبدأ بعد ثانيتين */
 }
 
-#send-order-button:hover {
-    background: linear-gradient(to right, 
-    green 0%, 
-    green 5%, 
-    white 5%, 
-    white 10%,
-    red 10%, 
-    red 10%,  
-    red 15%, 
-    red 100%);
-  transform: scale(0.80);
-  color: white;
-  }
+#send-order-button i {
+  margin-right: 8px;
+}
+
+
+/* أنيميشن اهتزاز */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+  75% { transform: translateX(-3px); }
+}
+
+
+.image-box {
+  margin-top: 25px;
+  width: 220px;
+  height: 220px;
+  display: flex;              /* ✅ */
+  justify-content: center;    /* ✅ أفقي */
+  align-items: center;        /* ✅ عمودي */
+  margin-left: auto;          /* ✅ باش تتوسط */
+  margin-right: auto;         /* ✅ */
+}
+
+/* الصورة */
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: fadeInOut 2s infinite ease-in-out;
+  
+}
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+
+.image-box2 {
+  margin-top: 25px;
+  width: 220px;
+  height: 220px;
+  display: flex;              /* ✅ */
+  justify-content: center;    /* ✅ أفقي */
+  align-items: center;        /* ✅ عمودي */
+  margin-left: auto;          /* ✅ باش تتوسط */
+  margin-right: auto;         /* ✅ */
+}
+
+/* الصورة */
+
+.image-box2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
 
 
 
