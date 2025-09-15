@@ -1999,11 +1999,11 @@ h3{
 
 #cart-count {
   position: absolute;
-  top: -9px;
-  left: 14px;
+  top: -11px;
+  left: 13px;
   background: red;
   color: white;
-  font-size: 7px;
+  font-size: 6px;
   font-weight: bold;
   border-radius: 100%;
   padding: 2px 6px;
