@@ -1999,7 +1999,7 @@ h3{
 
 #cart-count {
   position: absolute;
-  top: -6px;
+  top: -5px;
   left: 13px;
   background: red;
   color: white;
@@ -2254,7 +2254,7 @@ h3{
 .image-box {
   margin-top: 25px;
     width: 270px;
-  height: 300px;
+  height: 320px;
   display: flex;              /* ✅ */
   justify-content: center;    /* ✅ أفقي */
   align-items: center;        /* ✅ عمودي */
